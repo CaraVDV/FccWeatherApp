@@ -1,0 +1,157 @@
+body {
+  background: url("pixabay/default.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  color: #eed;
+  font-size: 90%;
+  font-family: 'Chivo', sans-serif;
+  text-align: center;
+  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.3); }
+
+main {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  margin: 5vw;
+  margin-top: 15vh;
+  padding: 3em;
+  position: relative; }
+
+h1 {
+  padding: .2em; }
+
+p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em; }
+
+button {
+  padding: 1em;
+  background: #444;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin: .2em;
+  width: 48%;
+  min-width: 8em;
+  margin-bottom: -1em; }
+  button:hover {
+    background-color: #555; }
+  button:active {
+    background-color: #333; }
+  button:focus {
+    outline: none; }
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: stretch;
+  color: #aaa;
+  text-shadow: none; }
+
+.filter::before {
+  content: '';
+  background: url("pixabay/default.jpg") no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(3px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1; }
+
+.filter::after {
+  content: '';
+  background-color: rgba(0, 15, 15, 0.15);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1; }
+
+.clearDay::before {
+  content: '';
+  background: url(pixabay/clearDay.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.clearNight::before {
+  content: '';
+  background: url(pixabay/clearNight.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.partlyCloudy::before {
+  content: '';
+  background: url(pixabay/partlyCloudy.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.cloudy::before {
+  content: '';
+  background: url(pixabay/cloudy.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.cloudyNight::before {
+  content: '';
+  background: url(pixabay/cloudyNight.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.overcast::before {
+  content: '';
+  background: url(pixabay/overcast.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.mist::before {
+  content: '';
+  background: url(pixabay/mist.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.winter::before {
+  content: '';
+  background: url(pixabay/winter.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.storm::before {
+  content: '';
+  background: url(pixabay/storm.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.credits {
+  padding-right: 3em;
+  font-size: 1.2em; }
+
+.icon {
+  font-size: 2em; }
+
+.icon:before {
+  font-family: 'MeteoconsRegular';
+  content: attr(data-icon); }
+
+@media (min-width: 576px) {
+  body {
+    font-size: 90%; } }
+
+@media (min-width: 768px) {
+  body {
+    font-size: 100%; } }
+
+@media (min-width: 992px) {
+  body {
+    font-size: 110%; } }
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 120%; } }

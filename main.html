@@ -1,0 +1,36 @@
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>FCC Weather App</title>
+    <!--/////////////////// CSS Stylesheets ////////////////////-->
+    <!--link(rel="stylesheet" href="")-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo|Open+Sans:600"/>
+    <link rel="stylesheet" href="meteocons-font/FONT/Font-face/stylesheet.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <!--////////////////// external JS ////////////////////////-->
+    <!--script(src ="") -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <script src="script.js"> </script>
+  </head>
+  <!--////////////////// End Head ////////////////////////////-->
+  <body>
+    <main class="filter">
+      <h1 id="location">... Loading ...</h1>
+      <p id="text"> Location Unknown</p><br/>
+      <div class="row" id="row1">
+        <p>	&nbsp;</p><span class="icon" data-icon="M" id="overall"></span>
+        <p>	&nbsp; &nbsp;||	&nbsp;</p>
+        <p id="temp">--</p><span class="icon" data-icon="+" id="deg"></span>
+      </div><br/>
+      <div class="row" id="row2">
+        <p id="windDir">-- &nbsp;</p>
+        <p id="windSp">-- &nbsp;</p>
+        <p id="windUn">mph</p>
+      </div>
+    </main>
+    <footer class="filter">
+      <p class="credits">caravdv &copy 2017</p>
+    </footer>
+  </body>
+</html>
